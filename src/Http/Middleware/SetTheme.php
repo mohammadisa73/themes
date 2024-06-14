@@ -63,7 +63,7 @@ class SetTheme
             },
         ], 'hasnayeen/themes');
 
-        if (!$panel->hasDarkModeForced()) {
+        if (! $panel->hasDarkModeForced()) {
             $panel->darkMode(! $currentTheme instanceof HasOnlyLightMode, $currentTheme instanceof HasOnlyDarkMode);
         }
 
